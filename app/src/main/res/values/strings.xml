@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Country App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="countryItemTvCountryNameExample">México</string>
+    <string name="countryItemTvCountryCapitalLabel">Capital:</string>
+    <string name="countryItemTvCountryCapitalExample">Ciudad de México</string>
+    <string name="mainNavMiPerfil">Dev Info</string>
+    <string name="mainNavMiBuscar">Buscar Pais</string>
+    <string name="mainNavMiContinente">Continentes</string>
+
+    <string-array name="continentes">
+        <item>Continentes</item>
+        <item>Africa</item>
+        <item>Americas</item>
+        <item>Asia</item>
+        <item>Europe</item>
+        <item>Ocean</item>
+    </string-array>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".perfil.fragments.PerfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/boxPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/perfilSivDeveloper"
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:layout_margin="26dp"
+            app:shapeAppearanceOverlay="@style/roundedShapeImage"
+            android:scaleType="centerCrop"
+            app:strokeWidth="5sp"
+            android:layout_marginTop="20dp"
+            app:strokeColor="?attr/colorPrimary"
+            app:srcCompat="@drawable/jefe"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/perfilTvNombreLabel"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNombreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Nombre: "
+            style="@style/textSubtitle.center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/perfilTvNombreDev"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNombreDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorTertiary"
+            android:text="Angel Ivan Alvarez Castillo "
+            android:layout_margin="16dp"
+            style="@style/textsubSubtitle.center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/perfilTvNCLabel"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNCLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero de control:"
+            android:textColor="?attr/colorTertiary"
+            style="@style/textSubtitle.center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/perfilTvNCDev"
+            />
+
+        <TextView
+            android:id="@+id/perfilTvNCDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20291033"
+            style="@style/textsubSubtitle.center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfilTvNCLabel"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
